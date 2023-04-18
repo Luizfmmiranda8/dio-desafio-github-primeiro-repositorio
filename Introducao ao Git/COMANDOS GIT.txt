@@ -1,0 +1,39 @@
+COMANDOS GIT:
+
+VER TODAS AS BRANCHES LOCAIS
+git branch
+
+MERGE DE branch NA BRANCH ATIVA
+git merge branch
+
+MUDAR BRANCH ATIVA PARA branch
+git checkout branch
+
+ADICIONAR MUDANÇAS PARA COMMIT
+git add .
+
+FAZER COMMIT DE MUDANÇAS ADICIONADAS
+git commit -m "TEXTO DO COMMIT"
+
+CRIAR NOVA BRANCH LOCAL
+git branch novabranch
+
+FAZER O FETCH E VISUALIZAR TODAS AS BRANCHS REMOTAS
+git fetch origin
+git branch -a
+
+MUDAR PARA UMA BRANCH REMOTA
+git checkout -b branchremota origin/branchremota
+
+EXCLUIR BRANCH LOCAL
+git branch -d branchlocal
+
+EXCLUIR BRANCH REMOTA
+git push origin --delete branchremota
+
+FAZER O PUSH DE UMA BRANCH LOCAL PARA VIRAR UMA BRANCH REMOTA
+git push --set-upstream origin branchlocal
+
+FAZER REBASE
+git rebase branch
+git rebase --continue (:wq para fechar o prompt de texto)
